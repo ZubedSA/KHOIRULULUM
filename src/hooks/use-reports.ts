@@ -73,18 +73,18 @@ export function useReports(year: string): UseReportsReturn {
                 const monthNum = index + 1
 
                 // Filter transactions for this month
-                const monthIncomes = incomes?.filter(i => {
+                const monthIncomes = incomes?.filter((i: { date: string, amount: number | string, category: { name?: string } | null | unknown }) => {
                     const d = new Date(i.date)
                     return d.getMonth() + 1 === monthNum
                 }) || []
 
-                const monthExpenses = expenses?.filter(e => {
+                const monthExpenses = expenses?.filter((e: { date: string, amount: number | string, category: { name?: string } | null | unknown }) => {
                     const d = new Date(e.date)
                     return d.getMonth() + 1 === monthNum
                 }) || []
 
-                const incomeSum = monthIncomes.reduce((sum, item) => sum + Number(item.amount), 0)
-                const expenseSum = monthExpenses.reduce((sum, item) => sum + Number(item.amount), 0)
+                const incomeSum = monthIncomes.reduce((sum: number, item: { amount: string | number }) => sum + Number(item.amount), 0)
+                const expenseSum = monthExpenses.reduce((sum: number, item: { amount: string | number }) => sum + Number(item.amount), 0)
 
                 return {
                     month,
@@ -98,7 +98,7 @@ export function useReports(year: string): UseReportsReturn {
             const totalExp = monthlyStats.reduce((sum, m) => sum + m.expense, 0)
 
             // ---- Process Category Breakdown ----
-            const processBreakdown = (data: any[], total: number) => {
+            const processBreakdown = (data: { category?: { name?: string } | null, amount: number | string }[], total: number) => {
                 const map = new Map<string, number>()
 
                 data.forEach(item => {

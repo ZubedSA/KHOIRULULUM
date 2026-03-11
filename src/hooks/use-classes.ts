@@ -71,8 +71,8 @@ export function useClasses(): UseClassesReturn {
 
             if (countError) console.error('Error fetching student counts:', countError)
 
-            const classesWithCounts = data?.map(cls => {
-                const count = studentsData?.filter(s => s.class_id === cls.id).length || 0
+            const classesWithCounts = data?.map((cls: { id: string;[key: string]: unknown }) => {
+                const count = studentsData?.filter((s: { class_id: string;[key: string]: unknown }) => s.class_id === cls.id).length || 0
                 return {
                     ...cls,
                     student_count: count
@@ -113,7 +113,7 @@ export function useClasses(): UseClassesReturn {
     const updateClass = async (id: string, data: UpdateClassInput): Promise<boolean> => {
         const supabase = createClient()
         try {
-            const updatePayload: any = {}
+            const updatePayload: Record<string, string | number | null> = {}
             if (data.name) updatePayload.name = data.name
             if (data.grade_level) updatePayload.grade_level = parseInt(data.grade_level)
             if (data.academic_year_id !== undefined) updatePayload.academic_year_id = data.academic_year_id

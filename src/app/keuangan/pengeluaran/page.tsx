@@ -354,7 +354,7 @@ export default function PengeluaranPage() {
                             </div>
                         ) : transactions.length === 0 ? (
                             <div className="text-center py-8 text-gray-500">
-                                Belum ada data pengeluaran. Klik "Tambah Pengeluaran" untuk menambah.
+                                Belum ada data pengeluaran. Klik &quot;Tambah Pengeluaran&quot; untuk menambah.
                             </div>
                         ) : (
                             <Table>

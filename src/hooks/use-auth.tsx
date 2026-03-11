@@ -80,7 +80,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     // ... (rest of the component logic)
 
-    const getUser = useCallback(async (passedUser?: any) => {
+    const getUser = useCallback(async (passedUser?: { id: string; email?: string; user_metadata?: Record<string, unknown> } | null) => {
         try {
             console.log('--- STARTING GET_USER ---', { passedUser: !!passedUser })
             let authUser = passedUser
@@ -178,8 +178,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             console.log('User Auth Loaded (Final):', debugData)
 
             if (typeof window !== 'undefined') {
-                (window as any).MADRASAH_DEBUG = debugData;
-                (window as any).MADRASAH_USER = userProfile;
+                (window as { MADRASAH_DEBUG?: unknown }).MADRASAH_DEBUG = debugData;
+                (window as { MADRASAH_USER?: unknown }).MADRASAH_USER = userProfile;
             }
 
             // Clear old/incompatible cache (can happen if user format changed)
@@ -196,7 +196,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         } catch (error) {
             console.error('Auth error detailed:', error)
             if (typeof window !== 'undefined') {
-                (window as any).MADRASAH_LAST_ERROR = error
+                (window as { MADRASAH_LAST_ERROR?: unknown }).MADRASAH_LAST_ERROR = error
             }
         } finally {
             if (isMounted.current) {
@@ -220,13 +220,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             getUser()
         }
 
-        const { data: { subscription } } = supabase.auth.onAuthStateChange((event: any, session: any) => {
+        const { data: { subscription } } = supabase.auth.onAuthStateChange((event: string, session: unknown) => {
             if (event === 'SIGNED_OUT') {
                 setUser(null)
                 clearCachedAuth()
             } else if (event === 'SIGNED_IN' || event === 'INITIAL_SESSION') {
-                // Recover or update session if it changes
-                getUser(session?.user)
+                const s = session as { user?: { id: string; email?: string; user_metadata?: Record<string, unknown> } | null };
+                getUser(s?.user)
             }
         })
 

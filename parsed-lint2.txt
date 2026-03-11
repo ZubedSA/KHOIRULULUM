@@ -1,0 +1,20 @@
+E:\web\KHAIRULULUM\madrasah-app\lint-runner.js
+  1:22 A `require()` style import is forbidden.
+  2:12 A `require()` style import is forbidden.
+E:\web\KHAIRULULUM\madrasah-app\run-eslint.js
+  1:20 A `require()` style import is forbidden.
+  2:12 A `require()` style import is forbidden.
+E:\web\KHAIRULULUM\madrasah-app\scripts\check-profiles.js
+  1:26 A `require()` style import is forbidden.
+  2:16 A `require()` style import is forbidden.
+E:\web\KHAIRULULUM\madrasah-app\scripts\migrate.js
+  4:12 A `require()` style import is forbidden.
+  5:14 A `require()` style import is forbidden.
+E:\web\KHAIRULULUM\madrasah-app\scripts\seed-academic.js
+  2:26 A `require()` style import is forbidden.
+  3:16 A `require()` style import is forbidden.
+  20:21 'session' is assigned a value but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\components\ui\textarea.tsx
+  5:18 An interface declaring no members is equivalent to its supertype.
+E:\web\KHAIRULULUM\madrasah-app\tailwind.config.ts
+  61:13 A `require()` style import is forbidden.

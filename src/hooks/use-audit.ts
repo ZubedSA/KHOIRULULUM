@@ -10,8 +10,8 @@ export interface AuditLog {
     action: string
     table_name: string
     record_id: string
-    old_data: any
-    new_data: any
+    old_data: Record<string, unknown> | null
+    new_data: Record<string, unknown> | null
     ip_address?: string
     user_agent?: string
     user?: {
@@ -33,7 +33,7 @@ interface UseAuditLogsReturn {
     loading: boolean
     error: Error | null
     refetch: () => void
-    logAction: (action: string, tableName: string, recordId: string, oldData?: any, newData?: any) => Promise<boolean>
+    logAction: (action: string, tableName: string, recordId: string, oldData?: Record<string, unknown> | null, newData?: Record<string, unknown> | null) => Promise<boolean>
 }
 
 export function useAuditLogs(filters?: AuditLogFilters): UseAuditLogsReturn {
@@ -88,7 +88,7 @@ export function useAuditLogs(filters?: AuditLogFilters): UseAuditLogsReturn {
             }
 
             if (data) {
-                setLogs(data as any[])
+                setLogs(data as AuditLog[])
             }
         } catch (err) {
             console.error('Error fetching audit logs:', err)
@@ -99,7 +99,7 @@ export function useAuditLogs(filters?: AuditLogFilters): UseAuditLogsReturn {
         }
     }, [filters?.action, filters?.tableName, filters?.startDate, filters?.endDate])
 
-    const logAction = async (action: string, tableName: string, recordId: string, oldData?: any, newData?: any): Promise<boolean> => {
+    const logAction = async (action: string, tableName: string, recordId: string, oldData?: Record<string, unknown> | null, newData?: Record<string, unknown> | null): Promise<boolean> => {
         const supabase = createClient()
 
         try {

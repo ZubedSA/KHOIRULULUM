@@ -24,7 +24,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select'
-import { Plus, TrendingUp, TrendingDown, MoreHorizontal, Pencil, Trash2, Tag, Loader2, AlertCircle } from 'lucide-react'
+import { Plus, TrendingUp, TrendingDown, MoreHorizontal, Pencil, Trash2, Tag, Loader2 } from 'lucide-react'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -55,8 +55,7 @@ export default function KategoriPage() {
     const [editingCategory, setEditingCategory] = useState<Category | null>(null)
     const [editForm, setEditForm] = useState<UpdateCategoryInput>({})
 
-    // Delete State
-    const [deletingId, setDeletingId] = useState<string | null>(null)
+    // Delete State (unused explicitly)
 
     const incomeCategories = categories.filter(c => c.type === 'income')
     const expenseCategories = categories.filter(c => c.type === 'expense')

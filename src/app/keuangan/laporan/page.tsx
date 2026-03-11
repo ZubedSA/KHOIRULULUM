@@ -11,7 +11,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select'
-import { BarChart3, TrendingUp, TrendingDown, Download, FileSpreadsheet, FileText, Wallet, Loader2 } from 'lucide-react'
+import { BarChart3, TrendingUp, TrendingDown, FileSpreadsheet, FileText, Wallet, Loader2 } from 'lucide-react'
 import { useReports } from '@/hooks/use-reports'
 
 export default function LaporanPage() {

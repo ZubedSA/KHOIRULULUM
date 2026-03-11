@@ -1,0 +1,91 @@
+﻿
+E:\web\KHAIRULULUM\madrasah-app\src\app\admin\audit\page.tsx
+  30:97   error  'Database' is defined but never used      @typescript-eslint/no-unused-vars
+  30:107  error  'AlertCircle' is defined but never used   @typescript-eslint/no-unused-vars
+  88:34   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  88:48   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\admin\page.tsx
+  5:86  error  'Loader2' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\admin\settings\page.tsx
+  95:69  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  95:86  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\absensi\page.tsx
+  15:56  error  'Search' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\jadwal\page.tsx
+  7:10  error  'Input' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\kelas\page.tsx
+  3:20  error  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\nilai\page.tsx
+   64:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  124:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\siswa\page.tsx
+  34:10  error  'Plus' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\kategori\page.tsx
+  27:88  error  'AlertCircle' is defined but never used             @typescript-eslint/no-unused-vars
+  59:12  error  'deletingId' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  59:24  error  'setDeletingId' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\laporan\page.tsx
+  14:47  error  'Download' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\pemasukan\page.tsx
+  357:64  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  357:81  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\pengeluaran\page.tsx
+  357:66  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  357:85  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+E:\web\KHAIRULULUM\madrasah-app\src\components\features\academic\raport-template.tsx
+  1:10  error  'Profile' is defined but never used       @typescript-eslint/no-unused-vars
+  1:19  error  'Student' is defined but never used       @typescript-eslint/no-unused-vars
+  1:28  error  'Subject' is defined but never used       @typescript-eslint/no-unused-vars
+  1:37  error  'Grade' is defined but never used         @typescript-eslint/no-unused-vars
+  1:44  error  'Attendance' is defined but never used    @typescript-eslint/no-unused-vars
+  2:10  error  'cn' is defined but never used            @typescript-eslint/no-unused-vars
+  5:14  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  6:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  9:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\components\ui\textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-audit.ts
+   13:15   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   14:15   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   36:80   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   36:95   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   91:33   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  102:93   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  102:108  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-auth.tsx
+   83:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  181:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  182:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  199:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  223:84  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  223:98  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-classes.ts
+  116:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-profiles.ts
+  58:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-reports.ts
+  101:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-toast.ts
+  21:7  error  'actionTypes' is assigned a value but only used as a type  @typescript-eslint/no-unused-vars
+
+✖ 48 problems (48 errors, 0 warnings)
+

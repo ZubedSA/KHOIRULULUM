@@ -1,3 +1,4 @@
+/* eslint-disable */
 // Run database migration
 // Execute: node scripts/migrate.js
 

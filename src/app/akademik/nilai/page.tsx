@@ -52,6 +52,20 @@ const subjects = ['Al-Quran', 'Matematika', 'B. Indonesia', 'B. Arab', 'Fiqih', 
 const gradeTypes = ['Tugas', 'UTS', 'UAS', 'Praktik']
 const semesters = ['Semester 1', 'Semester 2']
 
+interface GradeData {
+    id: string;
+    student: string;
+    nis: string;
+    class: string;
+    subject: string;
+    tugas: number;
+    uts: number;
+    uas: number;
+    avg: number;
+    fullGrades?: { subject: string; score: number }[];
+    attendance?: { hadir: number; sakit: number; izin: number; alpha: number };
+}
+
 export default function NilaiPage() {
     const { confirm } = useUI()
     const { toast } = useToast()
@@ -61,7 +75,7 @@ export default function NilaiPage() {
     const [semesterFilter, setSemesterFilter] = useState('Semester 1')
     const [isDialogOpen, setIsDialogOpen] = useState(false)
     const [isRaportOpen, setIsRaportOpen] = useState(false)
-    const [selectedStudent, setSelectedStudent] = useState<any>(null)
+    const [selectedStudent, setSelectedStudent] = useState<GradeData | null>(null)
     const [formData, setFormData] = useState({
         student: '',
         gradeType: '',
@@ -121,7 +135,7 @@ export default function NilaiPage() {
         }
     }
 
-    const handleShowRaport = (student: any) => {
+    const handleShowRaport = (student: GradeData) => {
         // Mock full grades for raport
         const fullGrades = subjects.map(s => ({
             subject: s,
@@ -440,8 +454,8 @@ export default function NilaiPage() {
                                     classData={{ name: classFilter, homeroom_teacher_name: 'Ahmad Syaifuddin, S.Pd.' }}
                                     semester={semesterFilter}
                                     academicYear="2025/2026"
-                                    grades={selectedStudent.fullGrades}
-                                    attendance={selectedStudent.attendance}
+                                    grades={selectedStudent.fullGrades || []}
+                                    attendance={selectedStudent.attendance || { hadir: 0, sakit: 0, izin: 0, alpha: 0 }}
                                     date="11 Maret 2026"
                                 />
                             )}
@@ -458,8 +472,8 @@ export default function NilaiPage() {
                         classData={{ name: classFilter, homeroom_teacher_name: 'Ahmad Syaifuddin, S.Pd.' }}
                         semester={semesterFilter}
                         academicYear="2025/2026"
-                        grades={selectedStudent.fullGrades}
-                        attendance={selectedStudent.attendance}
+                        grades={selectedStudent.fullGrades || []}
+                        attendance={selectedStudent.attendance || { hadir: 0, sakit: 0, izin: 0, alpha: 0 }}
                         date="11 Maret 2026"
                     />
                 )}

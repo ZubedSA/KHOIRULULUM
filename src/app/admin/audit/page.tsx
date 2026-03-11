@@ -27,7 +27,7 @@ import {
     DialogHeader,
     DialogTitle,
 } from '@/components/ui/dialog'
-import { Shield, Search, Eye, UserPlus, Edit, Trash2, LogIn, LogOut, Download, Upload, Loader2, Database, AlertCircle } from 'lucide-react'
+import { Shield, Search, Eye, UserPlus, Edit, Trash2, LogIn, LogOut, Download, Upload, Loader2 } from 'lucide-react'
 import { format } from 'date-fns'
 import { id } from 'date-fns/locale'
 import { useAuditLogs, type AuditLog } from '@/hooks/use-audit'
@@ -85,7 +85,7 @@ export default function AuditPage() {
         }
     }
 
-    const formatDiff = (oldData: any, newData: any) => {
+    const formatDiff = (oldData: unknown, newData: unknown) => {
         if (!oldData && !newData) return 'Tidak ada detail perubahan'
 
         return (

@@ -354,7 +354,7 @@ export default function PemasukanPage() {
                             </div>
                         ) : transactions.length === 0 ? (
                             <div className="text-center py-8 text-gray-500">
-                                Belum ada data pemasukan. Klik "Tambah Pemasukan" untuk menambah.
+                                Belum ada data pemasukan. Klik &quot;Tambah Pemasukan&quot; untuk menambah.
                             </div>
                         ) : (
                             <Table>

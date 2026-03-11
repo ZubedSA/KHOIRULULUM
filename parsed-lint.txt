@@ -1,0 +1,68 @@
+E:\web\KHAIRULULUM\madrasah-app\src\app\admin\audit\page.tsx
+  30:97 'Database' is defined but never used.
+  30:107 'AlertCircle' is defined but never used.
+  88:34 Unexpected any. Specify a different type.
+  88:48 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\app\admin\page.tsx
+  5:86 'Loader2' is defined but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\app\admin\settings\page.tsx
+  95:69 `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  95:86 `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\absensi\page.tsx
+  15:56 'Search' is defined but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\jadwal\page.tsx
+  7:10 'Input' is defined but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\kelas\page.tsx
+  3:20 'useEffect' is defined but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\nilai\page.tsx
+  64:60 Unexpected any. Specify a different type.
+  124:40 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\app\akademik\siswa\page.tsx
+  34:10 'Plus' is defined but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\kategori\page.tsx
+  27:88 'AlertCircle' is defined but never used.
+  59:12 'deletingId' is assigned a value but never used.
+  59:24 'setDeletingId' is assigned a value but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\laporan\page.tsx
+  14:47 'Download' is defined but never used.
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\pemasukan\page.tsx
+  357:64 `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  357:81 `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+E:\web\KHAIRULULUM\madrasah-app\src\app\keuangan\pengeluaran\page.tsx
+  357:66 `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  357:85 `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+E:\web\KHAIRULULUM\madrasah-app\src\components\features\academic\raport-template.tsx
+  1:10 'Profile' is defined but never used.
+  1:19 'Student' is defined but never used.
+  1:28 'Subject' is defined but never used.
+  1:37 'Grade' is defined but never used.
+  1:44 'Attendance' is defined but never used.
+  2:10 'cn' is defined but never used.
+  5:14 Unexpected any. Specify a different type.
+  6:16 Unexpected any. Specify a different type.
+  9:13 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\components\ui\textarea.tsx
+  5:18 An interface declaring no members is equivalent to its supertype.
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-audit.ts
+  13:15 Unexpected any. Specify a different type.
+  14:15 Unexpected any. Specify a different type.
+  36:80 Unexpected any. Specify a different type.
+  36:95 Unexpected any. Specify a different type.
+  91:33 Unexpected any. Specify a different type.
+  102:93 Unexpected any. Specify a different type.
+  102:108 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-auth.tsx
+  83:53 Unexpected any. Specify a different type.
+  181:28 Unexpected any. Specify a different type.
+  182:28 Unexpected any. Specify a different type.
+  199:28 Unexpected any. Specify a different type.
+  223:84 Unexpected any. Specify a different type.
+  223:98 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-classes.ts
+  116:34 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-profiles.ts
+  58:41 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-reports.ts
+  101:45 Unexpected any. Specify a different type.
+E:\web\KHAIRULULUM\madrasah-app\src\hooks\use-toast.ts
+  21:7 'actionTypes' is assigned a value but only used as a type.

@@ -92,7 +92,7 @@ export default function SettingsPage() {
                 {hasChanges && (
                     <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
                         <p className="text-sm text-amber-700">
-                            Ada perubahan yang belum disimpan. Klik "Simpan Perubahan" untuk menyimpan.
+                            Ada perubahan yang belum disimpan. Klik &quot;Simpan Perubahan&quot; untuk menyimpan.
                         </p>
                     </div>
                 )}

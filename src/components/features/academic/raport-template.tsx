@@ -1,12 +1,11 @@
-import { Profile, Student, Subject, Grade, Attendance } from '@/types/database'
-import { cn } from '@/lib/utils'
+
 
 interface RaportTemplateProps {
-    student: any // Partially mock/typed for now
-    classData: any
+    student: { name: string; nis: string }
+    classData: { name: string; homeroom_teacher_name: string }
     semester: string
     academicYear: string
-    grades: any[]
+    grades: { subject: string; score: number }[]
     attendance: {
         hadir: number
         sakit: number

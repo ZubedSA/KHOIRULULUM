@@ -55,7 +55,7 @@ export function useProfiles() {
         }
     }
 
-    const createUser = async (userData: any) => {
+    const createUser = async (userData: Record<string, unknown>) => {
         try {
             const response = await fetch('/api/admin/users/create', {
                 method: 'POST',

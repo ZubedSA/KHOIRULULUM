@@ -12,7 +12,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select'
-import { ClipboardCheck, Check, X, AlertCircle, Users, Search } from 'lucide-react'
+import { ClipboardCheck, Check, X, AlertCircle, Users } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 
 // Mock data
@@ -219,19 +219,19 @@ export default function AbsensiPage() {
                                                     variant={attendance[student.id] === status.value ? 'default' : 'outline'}
                                                     size="sm"
                                                     className={`w-9 h-9 p-0 ${attendance[student.id] === status.value
-                                                            ? status.color === 'green' ? 'bg-green-500 hover:bg-green-600'
-                                                                : status.color === 'yellow' ? 'bg-yellow-500 hover:bg-yellow-600'
-                                                                    : status.color === 'blue' ? 'bg-blue-500 hover:bg-blue-600'
-                                                                        : 'bg-red-500 hover:bg-red-600'
-                                                            : ''
+                                                        ? status.color === 'green' ? 'bg-green-500 hover:bg-green-600'
+                                                            : status.color === 'yellow' ? 'bg-yellow-500 hover:bg-yellow-600'
+                                                                : status.color === 'blue' ? 'bg-blue-500 hover:bg-blue-600'
+                                                                    : 'bg-red-500 hover:bg-red-600'
+                                                        : ''
                                                         }`}
                                                     onClick={() => handleStatusChange(student.id, status.value)}
                                                 >
                                                     <status.icon className={`w-4 h-4 ${attendance[student.id] === status.value ? 'text-white' :
-                                                            status.color === 'green' ? 'text-green-600' :
-                                                                status.color === 'yellow' ? 'text-yellow-600' :
-                                                                    status.color === 'blue' ? 'text-blue-600' :
-                                                                        'text-red-600'
+                                                        status.color === 'green' ? 'text-green-600' :
+                                                            status.color === 'yellow' ? 'text-yellow-600' :
+                                                                status.color === 'blue' ? 'text-blue-600' :
+                                                                    'text-red-600'
                                                         }`} />
                                                 </Button>
                                             ))}

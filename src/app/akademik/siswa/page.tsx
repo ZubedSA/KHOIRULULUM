@@ -31,7 +31,7 @@ import {
     SelectValue,
 } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
-import { Plus, Search, MoreHorizontal, Pencil, Trash2, UserPlus, Users, Loader2 } from 'lucide-react'
+import { Search, MoreHorizontal, Pencil, Trash2, UserPlus, Users, Loader2 } from 'lucide-react'
 import {
     DropdownMenu,
     DropdownMenuContent,

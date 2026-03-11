@@ -2,7 +2,7 @@
 
 import { DashboardLayout } from '@/components/layout/dashboard-layout'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Users, GraduationCap, BookOpen, Wallet, TrendingUp, TrendingDown, Calendar, Loader2 } from 'lucide-react'
+import { Users, GraduationCap, BookOpen, Wallet, TrendingUp, TrendingDown, Calendar } from 'lucide-react'
 import Link from 'next/link'
 import { useDashboardStats } from '@/hooks/use-dashboard-stats'
 
